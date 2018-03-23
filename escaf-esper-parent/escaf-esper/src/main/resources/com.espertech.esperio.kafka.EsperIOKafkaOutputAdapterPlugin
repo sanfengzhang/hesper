@@ -1,0 +1,10 @@
+bootstrap.servers=192.168.1.100:9092
+acks=all
+retries= 1
+batch.size= 16384
+linger.ms= 1
+buffer.memory=33554432
+key.serializer=org.apache.kafka.common.serialization.StringSerializer
+value.serializer=com.escaf.esper.kafaserialize.KryoKafkaSerializer
+esperio.kafka.output.flowcontroller=com.espertech.esperio.kafka.EsperIOKafkaOutputFlowControllerByAnnotatedStmt
+esperio.kafka.topics=Save-Eeven-Topic3

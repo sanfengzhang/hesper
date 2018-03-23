@@ -1,0 +1,11 @@
+bootstrap.servers=192.168.1.100:9092
+key.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+value.deserializer=com.escaf.esper.kafaserialize.KryoKafkaDeserializer
+group.id=my_group_id_0
+auto.commit.interval.ms=10000
+auto.offset.reset=earliest
+esperio.kafka.input.subscriber=com.espertech.esperio.kafka.EsperIOKafkaInputSubscriberByTopicList
+esperio.kafka.topics=Save-Eeven-Kafka4
+esperio.kafka.input.processor=com.espertech.esperio.kafka.EsperIOKafkaInputProcessorDefault
+esperio.kafka.input.timestampextractor=com.espertech.esperio.kafka.EsperIOKafkaInputTimestampExtractorConsumerRecord
+
